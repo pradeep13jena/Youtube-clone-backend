@@ -25,7 +25,8 @@ app.use(
 app.use(express.json());
 
 mongoose.connect(
-  "mongodb+srv://goldrushatjenas:CWWpxzrkNnRffbyH@cluster0.iglry.mongodb.net/Youtube"
+  process.env.MONGO_URI, 
+  { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
 mongoose.connection.on("connected", () => console.log("Database connected"));
