@@ -18,7 +18,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://youtubepradeep.netlify.app/",
+    origin: "https://youtubepradeep.netlify.app",
   })
 );
 
