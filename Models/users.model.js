@@ -22,7 +22,6 @@ const userSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    unique: true,
     match: [
       /^[a-zA-Z\s]+$/, // Only allows letters and spaces
       "Please provide a valid name (only letters and spaces are allowed)",
